@@ -50,8 +50,8 @@ start_routines() {
   whiptail --backtitle "Proxmox VE Helper Scripts" --msgbox --title "PVE8 SOURCES" "This will set the correct sources to update and install Proxmox VE 8." 10 58
     msg_info "Changing to Proxmox VE 8 Sources"
     cat <<EOF >/etc/apt/sources.list
-deb http://ftp.debian.org/debian bookworm main contrib
-deb http://ftp.debian.org/debian bookworm-updates main contrib
+deb http://ftp.us.debian.org/debian bookworm main contrib
+deb http://ftp.us.debian.org/debian bookworm-updates main contrib
 deb http://security.debian.org/debian-security bookworm-security main contrib
 EOF
     msg_ok "Changed to Proxmox VE 8 Sources"
